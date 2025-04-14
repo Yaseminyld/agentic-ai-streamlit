@@ -1,5 +1,5 @@
 import os
-if os.path.exists("streamlit_secret"):
+if os.path.exists("streamlit_secret") and not os.path.exists(".streamlit"):
     os.rename("streamlit_secret", ".streamlit")
 import streamlit as st
 import pandas as pd
