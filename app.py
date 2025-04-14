@@ -15,7 +15,7 @@ st.title("🤖 Agentic AI: Social Media Analyzer")
 st.markdown("Upload a tweet CSV, enter your task in natural language, and let the AI agent do the rest.")
 
 # Huggingface model for sentiment
-sentiment_model = pipeline("sentiment-analysis", model="savasy/bert-base-turkish-sentiment-cased")
+sentiment_model = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
 
 # Upload CSV
 uploaded_file = st.file_uploader("📄 Upload a CSV file", type=["csv"])
