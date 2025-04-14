@@ -1,3 +1,6 @@
+import os
+if os.path.exists("streamlit_secret"):
+    os.rename("streamlit_secret", ".streamlit")
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
